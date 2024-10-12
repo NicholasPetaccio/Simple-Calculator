@@ -5,59 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="outerContainer">
         <div class="innerContainer">
             <div class="Calculator">
                 <header class="calcHeader">Nick's Simple Calculator</header>
-                <hr />
                 <div class="outerDisplay">
                     <div class="innerDisplay">
-                        <div class="displayNumber">
-                            0
-                        </div>
+                        <input class="displayNumber" id="display" value="0">
+                        </input>
                     </div>
                 </div>
-                <hr />
+
                 <div class="outerButtons">
                     <div class="innerButtons">
                         <div class="buttons">
-                            <div class="outerFunctions">
-                                <div class="innerFunctions">
-                                    <button class="clear">CLR</button>
-                                    <button class="powerBtn">On/Off</button>
-                                </div>
-                            </div>
                             <div class="outerNums">
                                 <div class="innerNums">
                                     <div class="numbers">
-                                        <button class="number">9</button>
-                                        <button class="number">8</button>
                                         <button class="number">7</button>
-                                        <button class="number">6</button>
-                                        <button class="number">5</button>
+                                        <button class="number">8</button>
+                                        <button class="number">9</button>
                                         <button class="number">4</button>
-                                        <button class="number">3</button>
-                                        <button class="number">2</button>
+                                        <button class="number">5</button>
+                                        <button class="number">6</button>
                                         <button class="number">1</button>
-                                        <button class="number">0</button>
+                                        <button class="number">2</button>
+                                        <button class="number">3</button>
+                                        <button class="number" id="zero">0</button>
+                                        <button class="decimal"> . </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="outerOperators">
                                 <div class="innerOperators">
-                                    <button class="operator">+</button>
-                                    <button class="operator">-</button>
-                                    <button class="operator">x</button>
-                                    <button class="operator">/</button>
+                                    <div class="operators">
+                                        <button class="operator">/</button>
+                                        <button class="operator">x</button>
+                                        <button class="operator">-</button>
+                                        <button class="operator">+</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="decimal">
-                                <button class="decimal"> . </button>
-                            </div>
-                            <div class="equals">
-                                <button class="equal"> = </button>
+                            <div class="outerFunctions">
+                                <div class="innerFunctions">
+                                    <div class="functions">
+                                        <button class="function" id="clear">CLR</button>
+                                        <button class="function" id="backspace">BKSP</button>
+                                        <button class="function" id="percent">%</button>
+                                        <button class="function" id="equals">=</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
