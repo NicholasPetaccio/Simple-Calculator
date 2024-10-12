@@ -33,6 +33,7 @@
     background-color: rgb(91, 88, 0);
     box-shadow: inset 2px 2px 3px black;
     width: fit-content;
+    color: black;
 }
 
 .outerButtons{
