@@ -25,37 +25,37 @@
                             <div class="outerNums">
                                 <div class="innerNums">
                                     <div class="numbers">
-                                        <button class="number">7</button>
-                                        <button class="number">8</button>
-                                        <button class="number">9</button>
-                                        <button class="number">4</button>
-                                        <button class="number">5</button>
-                                        <button class="number">6</button>
-                                        <button class="number">1</button>
-                                        <button class="number">2</button>
-                                        <button class="number">3</button>
-                                        <button class="number" id="zero">0</button>
-                                        <button class="decimal"> . </button>
+                                        <button class="number" onclick='handleClick("7")'>7</button>
+                                        <button class="number" onclick='handleClick("8")'>8</button>
+                                        <button class="number" onclick='handleClick("9")'>9</button>
+                                        <button class="number" onclick='handleClick("4")'>4</button>
+                                        <button class="number" onclick='handleClick("5")'>5</button>
+                                        <button class="number" onclick='handleClick("6")'>6</button>
+                                        <button class="number" onclick='handleClick("1")'>1</button>
+                                        <button class="number" onclick='handleClick("2")'>2</button>
+                                        <button class="number" onclick='handleClick("3")'>3</button>
+                                        <button class="number" id="zero" onclick='handleClick(0)'>0</button>
+                                        <button class="decimal" onclick="handleClick('.')"> . </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="outerOperators">
                                 <div class="innerOperators">
                                     <div class="operators">
-                                        <button class="operator">/</button>
-                                        <button class="operator">x</button>
-                                        <button class="operator">-</button>
-                                        <button class="operator">+</button>
+                                        <button class="operator" onclick="handleOp('/')">/</button>
+                                        <button class="operator" onclick="handleOp('*')">x</button>
+                                        <button class="operator" onclick="handleOp('-')">-</button>
+                                        <button class="operator" onclick="handleOp('+')">+</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="outerFunctions">
                                 <div class="innerFunctions">
                                     <div class="functions">
-                                        <button class="function" id="clear">CLR</button>
-                                        <button class="function" id="backspace">BKSP</button>
+                                        <button class="function" id="clear" onclick=handleClear()>CLR</button>
+                                        <button class="function" id="backspace" onclick="handleBackspace()">BKSP</button>
                                         <button class="function" id="percent">%</button>
-                                        <button class="function" id="equals">=</button>
+                                        <button class="function" id="equals" onclick="handleEquals()">=</button>
                                     </div>
                                 </div>
                             </div>
@@ -65,5 +65,6 @@
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
