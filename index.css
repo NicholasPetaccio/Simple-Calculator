@@ -12,6 +12,7 @@ background-color: rgb(33, 48, 48);
     width: fit-content;
     border-radius: 1em;
     background-color: rgb(28, 28, 28);
+    box-shadow: 5px 3px 3px black;
 }
 .Calculator{
     margin: 1.5em;
@@ -50,6 +51,22 @@ background-color: rgb(33, 48, 48);
     display: flex;
 }
 
+#equals:hover{
+    background-color: rgb(145, 39, 0);
+}
+
+.function:hover{
+    background-color: rgb(0, 0, 89);
+}
+
+.number:hover, .decimal:hover, .operator:hover{
+    background-color: darkgray;
+}
+
+.number:hover, .function:hover, .operator:hover, .decimal:hover{
+    cursor:pointer;
+}
+
 .numbers{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -80,9 +97,17 @@ background-color: rgb(33, 48, 48);
     margin-left: 5px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 5px;
 }
 
 .function {
     gap: 5px;
+    background-color: darkblue;
+    color: white;
+}
+
+#equals{
+    grid-row: 3 / 5;
+    background-color: orangered;
 }
